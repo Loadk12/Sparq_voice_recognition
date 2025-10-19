@@ -3,7 +3,7 @@
 ---
 
 ## Что это такое
-Лёгкий API‑сервис на **FastAPI** для транскрибации речи из видеофайлов с помощью **OpenAI Whisper**. На вход — видео, на выход — язык и текст. Есть простой Web UI для ручной загрузки, Docker‑окружение и автотесты.
+Лёгкий API‑сервис на **FastAPI** для транскрипции речи из видеофайлов с помощью **OpenAI Whisper**. На вход — видео, на выход — язык и текст. Есть простой Web UI для ручной загрузки, Docker‑окружение и автотесты.
 
 **Стек:** Python, FastAPI, Uvicorn, FFmpeg (через `ffmpeg-python`), OpenAI Whisper, Docker, PyTest.
 
@@ -27,7 +27,7 @@ Sparq_voice_recognition-master/
 │  │  ├─ audio_service.py        # Извлечение аудио из видео (FFmpeg)
 │  │  └─ transcription_service.py# Загрузка и вызов Whisper, пост-очистка
 │  ├─ api/
-│  │  └─ v1/endpoints/transcription.py  # REST‑эндпоинт транскрибации
+│  │  └─ v1/endpoints/transcription.py  # REST‑эндпоинт транскрипции
 │  └─ static/index.html          # Простая страница загрузки видео
 ├─ tests/
 │  ├─ test_api.py                # Юнит‑тесты API

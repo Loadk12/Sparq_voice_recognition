@@ -6,11 +6,11 @@ import uuid
 router = APIRouter()
 
 @router.post("/transcribe", response_model=TranscriptionResponse)
-async def transcribe_video(file: UploadFile = File(..., description="Видеофайл для транскрибации.")):
+async def transcribe_video(file: UploadFile = File(..., description="Видеофайл для транскрипции.")):
     """
     Принимает видеофайл, извлекает из него аудиодорожку, транскрибирует речь и возвращает результат в виде текста.
 
-    - **file**: Видеофайл, который необходимо обработать.
+    - **file**: Видеофайл, который необходимо обработать для транскрипции речи.
     """
     # Простая проверка типа контента видео.
     if not file.content_type or not file.content_type.startswith("video/"):
